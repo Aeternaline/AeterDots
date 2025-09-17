@@ -1,0 +1,20 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "spacing": 12,
+    "modules-left": ["hyprland/workspaces"],
+    "modules-right": ["tray", "battery", "network"],
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-charging": "󱐋 {capacity}%",
+        "format-plugged": "󰚥",
+        "format-icons": ["󰁻", "󰁽", "󰁿", "󰂁", "󰁹"]
+    },
+    "network": {
+        "format": "{ifname}",
+        "format-wifi": "{icon} {essid}",
+        "format-icons": {
+            "wifi": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+        }
+    },
+}
