@@ -1,0 +1,54 @@
+{
+  "layer": "top",
+  "position": "bottom",
+  "height": 40,
+  "spacing": 8,
+  "modules-left": ["custom/menu", "hyprland/window"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["hyprland/language", "network", "battery", "clock"],
+  "custom/menu": {
+    "format": "",
+    "on-click": "rofi -show drun"
+  },
+  "hyprland/workspaces": {
+    // Skipping
+  },
+  "hyprland/window": {
+    "format": "{class}",
+    "separate-outputs": true,
+    "tooltip": false
+  },
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": "EN",
+  },
+  "network": {
+    "format": "󱊪",
+    "format-disconnected": "󰕑",
+    "format-wifi": "{icon}",
+    "tooltip-format": "{ifname}",
+    "tooltip-format-wifi": "{essid} {signalStrength}%",
+    "format-icons": {
+      "wifi": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+    }
+  },
+  "battery": {
+    "format": "{icon}",
+    "format-charging": "{icon}",
+    "format-plugged": "󰚥",
+    "format-warning": "󱃍",
+    "format-critical": "󰗖",
+    "states": {
+      "warning": 15,
+      "critical": 10,
+    },
+    "tooltip-format": "{capacity}% remaining\n{timeTo}",
+    "format-icons": {
+      "default": ["󰁻", "󰁼", "󰁽", "󰁾", "󰂀", "󰂁", "󰂂", "󰁹"],
+      "charging": ["󰂄"],
+    }
+  },
+  "clock": {
+    "format": "{:%H:%M}"
+  }
+}
