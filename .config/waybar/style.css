@@ -9,6 +9,7 @@
 window#waybar {
   background-color: rgba(30, 30, 46, 0.88);
   color: rgb(205, 214, 244);
+  border-radius: 16px 16px 0 0;
 }
 
 window#waybar box {
@@ -16,11 +17,11 @@ window#waybar box {
 }
 
 .modules-left {
-  margin-left: 4px;
+  margin-left: 2px;
 }
 
 .modules-right {
-  margin-right: 8px;
+  margin-right: 4px;
   background-color: rgb(69, 71, 90);
   border-radius: 24px;
   font-size: 15px;
@@ -28,9 +29,13 @@ window#waybar box {
 
 #custom-menu {
   padding: 0 12px;
-  background-color: rgb(30, 30, 46);
+  background-color: rgb(69, 71, 90);
   border-radius: 50px;
   font-size: 14px;
+}
+
+#custom-menu:hover {
+  background-color: rgb(88, 91, 112);
 }
 
 #workspaces {
@@ -60,6 +65,10 @@ window#waybar box {
 
 #language {
   margin-left: 12px;
+}
+
+#wireplumber {
+  font-size: 18px;
 }
 
 #clock {

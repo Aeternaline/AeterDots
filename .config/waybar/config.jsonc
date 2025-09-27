@@ -5,13 +5,13 @@
   "spacing": 8,
   "modules-left": ["custom/menu", "hyprland/window"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["hyprland/language", "network", "battery", "clock"],
+  "modules-right": ["hyprland/language", "network", "wireplumber", "battery", "clock"],
   "custom/menu": {
     "format": "",
     "on-click": "rofi -show drun"
   },
   "hyprland/workspaces": {
-    // Skipping
+    "format": "{name}"
   },
   "hyprland/window": {
     "format": "{class}",
@@ -31,6 +31,11 @@
     "format-icons": {
       "wifi": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
     }
+  },
+  "wireplumber": {
+    "format": "{icon}",
+    "format-muted": "󰝟",
+    "format-icons": ["󰕿", "󰖀", "󰕾"],
   },
   "battery": {
     "format": "{icon}",
