@@ -1,0 +1,60 @@
+@import "../fonts.rasi"
+@import "../theme.rasi"
+
+configuration {
+	show-icons: false;
+}
+
+window {
+	anchor: center;
+	fullscreen: false;
+	location: east;
+	width: 75px;
+	border: 1px solid;
+	border-color: @border;
+	border-radius: 12px 0 0 12px;
+}
+
+mainbox {
+	background: transparent;
+	children: [ "listview" ];
+}
+
+listview {
+	background-color: rgba(30, 30, 46);
+	layout: vertical;
+	lines: 5;
+	columns: 1;
+	cycle: true;
+	scrollbar: false;
+	reverse: false;
+	padding: 10px 0;
+	spacing: 5px;
+	fixed-height: true;
+	fixed-columns: true;
+	cursor: "default";
+}
+
+element {
+	padding: 8px 10px;
+	margin: 10px;
+	border-radius: 8px;
+	children: [ "element-text" ];
+	background-color: rgb(30, 30, 46);
+	text-color: @text;
+	border: 1px solid;
+	border-color: @border;
+}
+
+element selected {
+	background-color: @text;
+	text-color: rgb(30, 30, 46);
+}
+
+element-text {
+	vertical-align: 0.5;
+	horizontal-align: 0.5;
+	font: "JetBrainsMono Nerd Font Propo 20";
+	background-color: inherit;
+	text-color: inherit;
+}

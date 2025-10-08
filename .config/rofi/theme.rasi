@@ -1,0 +1,7 @@
+* {
+	background: rgba(30, 30, 46, 0.88);
+	background-alt: rgb(88, 91, 112, 0.88);
+	text: rgb(205, 214, 244);
+	accent: rgb(249, 226, 175);
+	border: rgb(69, 71, 90);
+}

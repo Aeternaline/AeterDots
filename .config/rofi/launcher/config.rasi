@@ -1,8 +1,10 @@
+@import "../fonts.rasi"
+@import "../theme.rasi"
+
 configuration {
     modes: "drun";
-    font: "IBM Plex Sans 11";
     show-icons: true;
-    terminal: "foot";
+    terminal: "ghostty +new-window";
     drun-display-format: "{name}";
 }
 
@@ -16,10 +18,10 @@ window {
     width: 650px;
     margin: 0;
     padding: 0;
-    border: none;
+    border: 1px solid;
+	border-color: rgb(69, 71, 90);
     border-radius: 12px;
-
-    background-color: rgba(30, 30, 46, 0.8);
+    background-color: @background;
 }
 
 scrollbar {
@@ -44,7 +46,7 @@ entry {
     enabled: true;
     placeholder: "Open an App";
     background-color: transparent;
-    text-color: rgb(205, 214, 244);
+    text-color: @text;
 }
 
 message {
@@ -56,6 +58,7 @@ listview {
     layout: horizontal;
     columns: 5;
     dynamic: true;
+    cycle: true;
     border-color: transparent;
 }
 
@@ -70,14 +73,10 @@ element {
     border-radius: 12px;
 }
 
-element normal.normal {
-    background-color: transparent;
-    text-color: rgb(205, 214, 244);
-}
-
+element normal.normal,
 element alternate.normal {
     background-color: transparent;
-    text-color: rgb(205, 214, 244);
+    text-color: @text;
 }
 
 element selected.normal {

@@ -1,0 +1,66 @@
+@import "../fonts.rasi"
+@import "../theme.rasi"
+
+configuration {
+	show-icons: false;
+}
+
+window {
+	location: south;
+	width: 500px;
+	padding: 8px;
+	border: 1px solid;
+	border-color: rgb(69, 71, 90);
+	border-radius: 8px;
+	y-offset: -10;
+	background-color: rgb(30, 30, 46);
+}
+
+mainbox {
+	enabled: true;
+	children: [ "inputbar", "listview" ];
+}
+
+inputbar {
+	children: [ "prompt", "entry" ];
+	padding: 8px;
+	background-color: rgb(30, 30, 46);
+}
+
+prompt {
+	padding: 0px 4px;
+	margin: 0px 8px 0 0;
+	background-color: transparent;
+    text-color: @text;
+}
+
+entry {
+	placeholder: "Select";
+	background-color: transparent;
+    text-color: @text;
+	placeholder-color: rgb(88, 91, 112);
+}
+
+listview {
+	lines: 8;
+	background-color: rgb(30, 30, 46);
+	dynamic: true;
+}
+
+element {
+	border: 0px;
+	border-color: transparent;
+	padding: 10px;
+	background-color: rgb(30, 30, 46);
+}
+
+element selected.normal {
+    background-color: @background-alt;
+    text-color: @text;
+}
+
+element-text {
+	background-color: transparent;
+	text-color: @text;
+    highlight: none;
+}
