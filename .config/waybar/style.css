@@ -1,5 +1,5 @@
 /* You can change the color here */
-@import "./theme.css";
+@import "./colors.css";
 
 * {
   font-family: 'IBM Plex Sans', 'JetBrainsMono Nerd Font Propo';
@@ -7,8 +7,8 @@
 }
 
 window#waybar {
-  background-color: rgba(30, 30, 46, 0.88);
-  color: rgb(205, 214, 244);
+  background-color: @background;
+  color: @text;
   border-radius: 16px 16px 0 0;
 }
 
@@ -22,31 +22,27 @@ window#waybar box {
 
 .modules-right {
   margin-right: 4px;
-  background-color: rgb(69, 71, 90);
+  background-color: @background-alt;
   border-radius: 24px;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 #custom-menu {
   padding: 0 12px;
-  background-color: rgb(69, 71, 90);
+  background-color: @background-alt;
   border-radius: 50px;
-  font-size: 14px;
-}
-
-#custom-menu:hover {
-  background-color: rgb(88, 91, 112);
+  font-size: 16px;
 }
 
 #workspaces {
-  background-color: rgb(30, 30, 46);
+  background-color: @background;
   border-radius: 24px;
-  border: 1px solid rgb(108, 112, 134);
+  border: 1px solid @border;
   transition: all 0.25s ease-in-out;
 }
 
 #workspaces button {
-  background-color: rgb(69, 71, 90);
+  background-color: @background-alt;
   padding: 0 4px;
   margin: 0 4px;
   border-radius: 24px;
@@ -59,8 +55,8 @@ window#waybar box {
 }
 
 #workspaces button.active {
-  background-color: rgb(249, 226, 175);
-  color: rgb(30, 30, 46);
+  background-color: @accent;
+  color: @background;
 }
 
 #language {

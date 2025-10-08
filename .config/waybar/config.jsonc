@@ -1,14 +1,14 @@
 {
   "layer": "top",
   "position": "bottom",
-  "height": 40,
+  "height": 38,
   "spacing": 8,
   "modules-left": ["custom/menu", "hyprland/window"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["hyprland/language", "network", "wireplumber", "battery", "clock"],
   "custom/menu": {
-    "format": "",
-    "on-click": "rofi -show drun"
+    "format": "󰣛",
+    "on-click": "rofi -show drun -config ~/.config/rofi/launcher/config.rasi"
   },
   "hyprland/workspaces": {
     "format": "{name}"
@@ -47,7 +47,8 @@
       "warning": 15,
       "critical": 10,
     },
-    "tooltip-format": "{capacity}% remaining\n{timeTo}",
+    "tooltip-format": "{capacity}% remaining",
+    "tooltip-format-charging": "{capacity}% charging\n{timeTo}",
     "format-icons": {
       "default": ["󰁻", "󰁼", "󰁽", "󰁾", "󰂀", "󰂁", "󰂂", "󰁹"],
       "charging": ["󰂄"],
