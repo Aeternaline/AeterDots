@@ -1,0 +1,7 @@
+* {
+	background: {{ colors.surface.default.rgb }};
+	background-alt: {{ colors.surface_variant.default.rgb }};
+	text: {{ colors.on_surface.default.rgb }};
+	accent: {{ colors.primary.default.rgb }};
+	border: {{ colors.outline.default.rgb }};
+}

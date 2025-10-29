@@ -1,5 +1,5 @@
-@define-color background rgba(30, 30, 46, 0.88);
-@define-color background-alt rgb(69, 71, 90);
-@define-color text rgb(205, 214, 244);
-@define-color accent rgb(249, 226, 175);
-@define-color border rgb(108, 112, 134);
+@define-color background rgba(16, 21, 16, 0.8);
+@define-color background-alt rgb(65, 73, 65);
+@define-color text rgb(224, 228, 220);
+@define-color accent rgb(155, 212, 161);
+@define-color border rgb(139, 147, 137);

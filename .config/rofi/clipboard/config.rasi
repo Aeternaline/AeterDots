@@ -6,6 +6,7 @@ configuration {
 }
 
 window {
+	transparency: "real";
 	location: south;
 	width: 500px;
 	padding: 8px;
@@ -13,7 +14,7 @@ window {
 	border-color: rgb(69, 71, 90);
 	border-radius: 8px;
 	y-offset: -10;
-	background-color: rgb(30, 30, 46);
+	background-color: @background;
 }
 
 mainbox {
@@ -24,7 +25,7 @@ mainbox {
 inputbar {
 	children: [ "prompt", "entry" ];
 	padding: 8px;
-	background-color: rgb(30, 30, 46);
+	background-color: @background;
 }
 
 prompt {
@@ -43,7 +44,7 @@ entry {
 
 listview {
 	lines: 8;
-	background-color: rgb(30, 30, 46);
+	background-color: @background;
 	dynamic: true;
 }
 
@@ -51,7 +52,7 @@ element {
 	border: 0px;
 	border-color: transparent;
 	padding: 10px;
-	background-color: rgb(30, 30, 46);
+	background-color: transparent;
 }
 
 element selected.normal {

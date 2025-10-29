@@ -1,0 +1,5 @@
+@define-color background {{ colors.surface.default.rgba | set_alpha: 0.85 }};
+@define-color background-alt {{ colors.surface_variant.default.rgb }};
+@define-color text {{ colors.on_surface.default.rgb }};
+@define-color accent {{ colors.primary.default.rgb }};
+@define-color border {{ colors.outline.default.rgb }};

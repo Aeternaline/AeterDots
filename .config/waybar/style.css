@@ -9,15 +9,18 @@
 window#waybar {
   background-color: @background;
   color: @text;
-  border-radius: 16px 16px 0 0;
 }
 
 window#waybar box {
   padding: 1px 0;
 }
 
-.modules-left {
-  margin-left: 2px;
+tooltip {
+  background-color: @background;
+}
+
+tooltip label {
+  color: @text;
 }
 
 .modules-right {

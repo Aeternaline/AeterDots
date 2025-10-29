@@ -1,3 +1,5 @@
+@import "../theme.rasi"
+
 configuration {
 	show-icons: false;
 }
@@ -5,22 +7,22 @@ configuration {
 window {
 	background-color: transparent;
 	anchor: center;
-	width: 300px;
+	width: 325px;
 	border-radius: 8px;
 	border: 1px solid;
-	border-color: rgb(69, 71, 90);
+	border-color: @border;
 }
 
 mainbox {
-	background-color: rgb(30, 30, 46);
+	background-color: @background;
 	children: [ "message", "listview" ];
 	padding: 4px;
 }
 
 textbox {
-	background-color: rgb(30, 30, 46);
-	text-color: rgb(205, 214, 244);
-	font: "IBM Plex Sans 14";
+	background-color: @background;
+	text-color: @text;
+	font: "IBM Plex Sans Medium 16";
 	padding: 18px;
 	horizontal-align: 0.5;
 	vertical-align: 0.5;
@@ -28,7 +30,7 @@ textbox {
 
 listview {
 	layout: horizontal;
-	background-color: rgb(30, 30, 46);
+	background-color: @background;
 	columns: 2;
 	lines: 2;
 	cycle: true;
@@ -38,25 +40,23 @@ listview {
 }
 
 element {
-	padding: 4px 5px;
-	margin: 4px 5px;
+	padding: 5px 30px;
+	margin: 4px;
 	border-radius: 4px;
 	children: [ "element-text" ];
-	background-color: rgb(30, 30, 46);
-	text-color: rgb(205, 214, 244);
+	background-color: @background;
+	text-color: @text;
 	border: 1px solid;
-	border-color: rgb(69, 71, 90);
-	horizontal-align: 0.5;
 }
 
 element selected {
-	background-color: rgb(88, 91, 112);
+	background-color: @background-alt;
 }
 
 element-text {
 	vertical-align: 0.5;
 	horizontal-align: 0.5;
-	font: "JetBrainsMono Nerd Font Propo 12";
+	font: "JetBrainsMono Nerd Font Propo Medium 12";
 	background-color: inherit;
 	text-color: inherit;
 }

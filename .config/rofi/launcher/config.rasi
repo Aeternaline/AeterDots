@@ -4,7 +4,7 @@
 configuration {
     modes: "drun";
     show-icons: true;
-    terminal: "ghostty +new-window";
+    terminal: "ghostty";
     drun-display-format: "{name}";
 }
 
@@ -19,7 +19,7 @@ window {
     margin: 0;
     padding: 0;
     border: 1px solid;
-	border-color: rgb(69, 71, 90);
+	border-color: @border;
     border-radius: 12px;
     background-color: @background;
 }
@@ -80,8 +80,8 @@ element alternate.normal {
 }
 
 element selected.normal {
-    background-color: rgb(88, 91, 112, 0.88);
-    text-color: rgb(205, 214, 244);
+    background-color: @accent;
+    text-color: @background;
 }
 
 element-icon {

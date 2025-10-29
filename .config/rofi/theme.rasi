@@ -1,7 +1,7 @@
 * {
-	background: rgba(30, 30, 46, 0.88);
-	background-alt: rgb(88, 91, 112, 0.88);
-	text: rgb(205, 214, 244);
-	accent: rgb(249, 226, 175);
-	border: rgb(69, 71, 90);
+	background: rgb(16, 21, 16);
+	background-alt: rgb(65, 73, 65);
+	text: rgb(224, 228, 220);
+	accent: rgb(155, 212, 161);
+	border: rgb(139, 147, 137);
 }
