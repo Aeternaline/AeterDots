@@ -1,5 +1,6 @@
 # IMPORTANT
-I decided to move since Github is already (https://github.blog/news-insights/company-news/goodbye-github/)[ruined]. I'm sorry :(
+I decided to move since Github is already [ruined](https://github.blog/news-insights/company-news/goodbye-github/). I'm sorry :(
+Here's my new repo for [my dotfiles]()
 
 # AeterDots
 
